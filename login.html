@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenida a usuario</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <p class="title">Nombre de usuario</p>
+                <div class="group">
+                    <input placeholder="Nombre" type="search" class="input" id="name-input">
+                </div>
+                <button id="submit-button" onclick="showName()">Continua</button>
+            </div>
+            <div class="flip-card-back">
+                <p class="title">Biemvenido</p>
+                <p id="Name_imput">Leave Me</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+function showName() {
+  var name = document.getElementById("name-input").value;
+  document.getElementById("Name_imput").innerHTML = name;
+  document.querySelector(".flip-card-inner").style.transform = "rotateY(180deg)";
+}
+</script>
+</html>
