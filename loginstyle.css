@@ -202,3 +202,14 @@ html {
     calc(-2.3*var(--s)) calc(1.7*var(--s)),0 0
   }
 }
+
+.cabezal {
+  background-color: #4b4b4b;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  margin: 0 10px;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 900;
+}
