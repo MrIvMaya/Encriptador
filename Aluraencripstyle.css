@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+body {
+  font-family: 'Lato', sans-serif;
+}
+header {
+    background-color: #BBBBBB;
+    display: flex;
+    justify-content: flex-start;
+    height: 10%;
+  }
+.logo {
+    height: 50px;
+}
+.cabezal {
+    margin: 10px;
+    background: rgb(30, 31, 38);
+    color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.2);
+    margin: 10px;    
+    padding: 15px;
+    border-radius: 1rem;
+    }
+  .Inputedname {
+    width: 50%;
+    font-size: 1.5em;
+    text-align: left;
+    margin: 0 0 0 15px;
+  }
+  body {
+    background-color: rgb(19, 20, 23);
+    margin: 0;
+    overflow-x: hidden;
+  }
+  main {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+  }
+  section {
+    vertical-align: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .texttoencode {
+    width: 60%;
+    height: 600px;;
+    background: rgb(30, 31, 38);
+    color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.2);
+    margin: 10px 10px 0 20px;
+    padding: 15px;
+    border-radius: 1rem;
+    overflow-wrap: break-word;
+    font-family: 'Lato', sans-serif;
+    
+
+  }
+  .encodedtext {
+    width: 40%;
+    height:600px;
+    background: rgb(30, 31, 38);
+    color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.2);
+    margin: 10px 20px 0 10px;
+    padding: 15px ;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+
+  }
+  .title {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-family: 'Lato', sans-serif;
+  }
+  .input {
+    width: 100%;
+    height: 100%;
+    line-height: 28px;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: rgb(30, 31, 38);
+    font-size: 1.25em;
+    color: #ffffff;
+    max-width: 100%;
+    word-wrap: break-word;
+    font-family: 'Lato', sans-serif;
+    resize: none;
+  }
+
+  .input::placeholder {
+    color: rgb(134, 140, 160);
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .Botones {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    justify-content: space-around;
+    font-family: 'Lato', sans-serif;
+  }
+  .butencript {
+        font-size: 1em;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+        font-weight: bold;
+        border: 3px solid transparent;
+        border-radius:10px;
+        position: relative;
+        color: rgb(37, 40, 48);
+        text-decoration: none;
+        transition: 0.3s ease all;
+        z-index: 1;
+        background-color: #f3f3f4;
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-family: 'Lato', sans-serif;
+      }
+      
+      .butencript:hover {
+        color: white;
+        background-color: rgb(37, 40, 48);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+        font-family: 'Lato', sans-serif;
+      }
+    .resultado {
+    overflow-wrap : break-word;
+      font-size: 1.5em;
+      margin: 0 0 10px 0;
+      font-family: 'Lato', sans-serif;
+    }
+  
+  

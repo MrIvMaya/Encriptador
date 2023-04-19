@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <title>Encriptador</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="Aluraencripstyle.css">
     <script src="eventos.js"></script>
 </head>
 <body>
-    <div class="cabezal">
-        <p class="title">Bienvenido,</p>
-        <p class="Inputedname">Leave Me</p><----Corregir despues
-    </div>
+    <header class="cabezal">
+        <img src="Logo.png" class ="logo">
+        <p class="Inputedname">Leave Me</p>
+    </header>
+    <main class="main">
+        <section class="texttoencode">
+                <textarea autofocus placeholder="Introduce tu texto" type="text" class="input" id="text-to-encode" wrap="soft"></textarea>
+                <div class="Botones">
+                    <button class="butencript" onclick="encriptar()">Encriptar</button>
+                    <button class="butencript" onclick="desencriptar()">Desencriptar</button>
+                </div>
+        </section>
+        <section class="encodedtext">
+            <div class="intext">
+            <p class="resultado" id="resultado">Texto encriptado</p>
+            </div>
+            <div class="Botones">
+                <button class="butencript">Copiar</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
