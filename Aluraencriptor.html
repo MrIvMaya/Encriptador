@@ -18,16 +18,22 @@
                 <div class="Botones">
                     <button class="butencript" onclick="encriptar()">Encriptar</button>
                     <button class="butencript" onclick="desencriptar()">Desencriptar</button>
+                    <button class="butencript" onclick="limpiar()">Limpiar</button>
                 </div>
         </section>
         <section class="encodedtext">
-            <div class="intext">
-            <p class="resultado" id="resultado">Texto encriptado</p>
+            <h1 class="resultado" id="resultado">Resultado</h1>
+            <div class="intext" id="intext">
+                <img src="nada.png" class="nada nadaimg" id="nadaimg">
+                <p class="nada" id="nada"></p>
             </div>
             <div class="Botones">
-                <button class="butencript">Copiar</button>
+                <button class="butencript" onclick="copyToClipboard()">Copiar</button>
             </div>
         </section>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
