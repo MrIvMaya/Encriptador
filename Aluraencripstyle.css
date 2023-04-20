@@ -10,6 +10,7 @@ header {
   }
 .logo {
     height: 50px;
+    user-select: none;
 }
 .cabezal {
     margin: 10px;
@@ -19,6 +20,7 @@ header {
     margin: 10px;    
     padding: 15px;
     border-radius: 1rem;
+    user-select: none;
     }
   .Inputedname {
     width: 50%;
@@ -45,11 +47,11 @@ header {
   
   .texttoencode {
     width: 60%;
-    height: 600px;;
+    height: 850px;
     background: rgb(30, 31, 38);
     color: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.2);
-    margin: 10px 10px 0 20px;
+    margin: 10px 10px 0 10px;
     padding: 15px;
     border-radius: 1rem;
     overflow-wrap: break-word;
@@ -59,11 +61,11 @@ header {
   }
   .encodedtext {
     width: 40%;
-    height:600px;
+    height:850px;
     background: rgb(30, 31, 38);
     color: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.2);
-    margin: 10px 20px 0 10px;
+    margin: 10px 10px 0 10px;
     padding: 15px ;
     border-radius: 1rem;
     display: flex;
@@ -103,6 +105,7 @@ header {
     margin: 10px;
     justify-content: space-around;
     font-family: 'Lato', sans-serif;
+    user-select: none;
   }
   .butencript {
         font-size: 1em;
@@ -136,5 +139,24 @@ header {
       margin: 0 0 10px 0;
       font-family: 'Lato', sans-serif;
     }
+  .hide {
+    display: none;
+  }
+  #intext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
   
-  
+  .nada {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25em;
+    user-select: none;
+  }
+  .nadaimg {
+    width: 100%;
+  }
