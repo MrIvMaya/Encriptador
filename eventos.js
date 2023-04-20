@@ -12,7 +12,7 @@ function showName() {
 }
 function name() {
   var name = localStorage.getItem("name");
-  document.querySelector(".Inputedname").innerHTML = "Bienvenido " + name + " , esta todo listo para comenzar a encriptar...";
+  document.querySelector(".Inputedname").innerHTML = "Bienvenid@ " + name + " , esta todo listo para comenzar a encriptar...";
 }
 function openPage() {
   window.location.href = "Aluraencriptor.html";
@@ -27,8 +27,10 @@ function checkEnter(event) {
 if (window.location.href.endsWith("Aluraencriptor.html")) {
   window.onload = function() {
     name();
+    encriptar();
   };
 }
+
 
 function encriptar() {
   let texto = document.getElementById("text-to-encode").value;
@@ -38,6 +40,16 @@ function encriptar() {
   textoEncriptado = textoEncriptado.replace(/o/g, "ober");
   textoEncriptado = textoEncriptado.replace(/u/g, "ufat");
   document.getElementById("resultado").innerHTML = textoEncriptado;
+  if (texto === "") {
+    document.getElementById("resultado").classList.add("hide");
+    document.getElementById("nada").classList.remove("hide");
+    document.getElementById("nadaimg").classList.remove("hide");
+    document.getElementById("nada").innerHTML = "No se encontro ningun mensaje para encriptar";
+  } else {
+      document.getElementById("resultado").classList.remove("hide");
+      document.getElementById("nada").classList.add("hide");
+      document.getElementById("nadaimg").classList.add("hide");
+  }
 }
 
 function desencriptar() {
@@ -48,4 +60,27 @@ function desencriptar() {
   textodes = textodes.replace(/ober/g, "o");
   textodes = textodes.replace(/ufat/g, "u");
   document.getElementById("resultado").innerHTML = textodes;
+  if (texto === "") {
+    document.getElementById("resultado").classList.add("hide");
+    document.getElementById("nada").classList.remove("hide");
+    document.getElementById("nadaimg").classList.remove("hide");
+    document.getElementById("nada").innerHTML = "No se encontro ningun mensaje para desencriptar";
+  } else {
+      document.getElementById("resultado").classList.remove("hide");
+      document.getElementById("nada").classList.add("hide");
+      document.getElementById("nadaimg").classList.add("hide");
+  }
+}
+
+function limpiar() {
+document.getElementById("text-to-encode").value = "";
+document.getElementById("resultado").innerHTML = "";
+document.getElementById("resultado").classList.add("hide");
+document.getElementById("nada").classList.remove("hide");
+document.getElementById("nadaimg").classList.remove("hide");
+}
+
+function copyToClipboard() {
+  const textoACopiar = document.getElementById("resultado").innerText;
+  navigator.clipboard.writeText(textoACopiar);
 }
